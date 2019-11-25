@@ -45,7 +45,7 @@ function jsonpCBRecApps(res) {
     //            
 }
 var s = document.createElement('script');
-s.src = 'http://kme46.siteplug.com/qlapi?o=kme46&s=88107&u=[domain]&f=json&n=8&i=1&is=36x36&di=&callback=jsonpCBRecApps';
+s.src = '//kme46.siteplug.com/qlapi?o=kme46&s=88107&u=[domain]&f=json&n=8&i=1&is=36x36&di=&callback=jsonpCBRecApps';
 document.body.appendChild(s);
 /**** -- RECOMMENDED APPS: close -- ****/
 
@@ -53,7 +53,7 @@ document.body.appendChild(s);
 /**** ---- SITE SEARCH BAR  -- ****/
 function siteSuggest(ss_keyword) {
     var s = document.createElement('script');
-    s.src = 'https://cwc89.siteplug.com/sssapi?o=cwc89&s=61071&kw=' + ss_keyword + '&itype=cs&f=json&i=1&it=1&is=36x36&n=5&af=1&di=' + current_parameter + ' &callback=jsonpCBSearchSugg';
+    s.src = '//cwc89.siteplug.com/sssapi?o=cwc89&s=61071&kw=' + ss_keyword + '&itype=cs&f=json&i=1&it=1&is=36x36&n=5&af=1&di=' + current_parameter + ' &callback=jsonpCBSearchSugg';
     document.body.appendChild(s);
 }
 function jsonpCBSearchSugg(res) {
@@ -157,7 +157,7 @@ function direct_to_search_link() {
 
     if (search_query != '') {
         var s = document.createElement('script');
-        s.src = 'https://edd31.siteplug.com/sssapi?o=edd31&s=77160&kw=' + search_query + '&itype=cs&f=json&af=0&di=' + current_parameter + '&callback=jsonpCBSearchRedirect';
+        s.src = '//edd31.siteplug.com/sssapi?o=edd31&s=77160&kw=' + search_query + '&itype=cs&f=json&af=0&di=' + current_parameter + '&callback=jsonpCBSearchRedirect';
         document.body.appendChild(s);
     }
 }
